@@ -1,0 +1,434 @@
+body{
+    box-sizing: border-box;
+    background-image: url(./images/50.JPG);
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-nav{
+    position: relative;
+    float: right;
+    display:flex;
+    margin-right: 30px;
+    margin-top: -30px;
+}.right-nav a{
+    padding-right: 30px;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}.right-nav a:hover{
+    color: blue;
+}
+.dropdown-nav{
+   color: gold;
+   cursor: pointer;
+   font-size: 40px;
+}.dropdown-nav:hover #drpt{
+    display: block;
+}
+.logo{ 
+    font-size: 40px;
+    color: white;
+}
+
+#drpt{direction: rtl;
+    min-width: 10px;
+    position: absolute;
+    font-size: 17px;
+    margin-top: -22px;
+    display: block;
+
+}#drpt ul li{
+    padding: 5px;
+    font-size: 15px;
+    display: inline;
+}#drpt ul li:hover{
+    background: rgb(11, 150, 185);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-bottom-style: dashed;
+    border-radius:12px 45px 45px 15px;
+    list-style-type: none;
+}
+.selective-menu a li{
+  color: white;
+   list-style-type: none;
+   margin: -5px;
+   font-size: 20px;
+}.selective-menu a {
+    text-decoration: none;
+}.selective-menu{
+    margin-top:25px;
+    width: 110px;
+}.selective-menu a li:hover{
+    color:greenyellow;
+    border-right-style:dotted;
+    border-radius: 25px 0px 55px 0px;
+    background:rgb(4, 165, 165);
+}
+
+.explore-btn{
+    float:right;
+    margin-right:-140px;
+    margin-top: 370px;
+    font-size: 40px;
+    display: inline-block;
+    background: gold;
+    width: 160px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    height: 60px;
+}
+
+.social-sharing{
+    position: absolute;
+    margin-top:370px;
+    padding: 15px;
+    }
+.social-sharing a{
+    text-decoration: none;
+    color: white;
+}#social-img{
+    border-radius: 100%;
+    block-size: 18px;
+}
+#arrowContainer{
+    float: right;
+    position: relative;
+    margin-top: 220px;
+    margin-right: 30px;
+
+}
+#firstArrow{
+    background: gray;
+   border:1px solid white;
+   margin-right: 20px;
+   padding: 15px;
+   border-radius: 100%;
+   font-size: 25px;
+   width: 20px;
+   font-weight: bolder;
+   cursor: pointer;
+}
+#secondArrow{
+    background: gray;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#firstArrow:hover,#secondArrow:hover{
+    background: yellowgreen;
+}
+.twelve{
+    color: blue;
+    font-size: 250px;
+    position: relative;
+    margin: 0;
+    max-width: 0;
+    max-height: 0;
+    transform: translate(430px,-50px);
+   
+}
+.toolTip{
+    visibility: hidden;
+    font-size: 20px;
+    background:black ;
+}
+.explore-btn:hover .toolTip{
+    visibility: visible;
+    text-align: center;
+    display: inline-flex
+}
+#passing-yards{
+    color: white;position: absolute;
+    font-size: 85px;
+    margin-top: -195px;
+    margin-left: 100px;
+}
+#second-passing-yards{
+    color: white;position: absolute;
+    font-size: 80px;
+    margin-top: -132px;
+    margin-left: 100px;
+}
+.explore-btn .toolTip{
+    z-index: 1px;
+    visibility: hidden;
+    font-size: 15px;
+    background:black ;
+    width: 120px;
+    border-radius: 6px;
+    bottom: 100%;
+    padding: 0px 5;
+        text-align: center;
+    }
+    .explore-btn:hover .toolTip{
+        visibility: visible;
+        text-align: center;
+        display: inline-flex
+    }
+    .centre-menu a{
+        color: white;text-decoration: none;
+        list-style-type: none;
+    }.centre-menu{
+       margin-top: 240px;
+       margin-left: 350px;
+    }.centre-menu a:hover{
+        color: blue;
+    }
+/* 
+
+responsive device
+
+*/
+
+@media only screen and (max-width: 1200px){
+    .twelve{
+        font-size: 250px;
+        position: absolute;
+        margin: 0;
+        max-width: 0;
+        max-height: 0;
+        transform: translate(320px,-50px);
+        color: blue;
+       
+    }
+    .toolTip{
+        visibility: hidden;
+        font-size: 20px;
+        background:black ;
+    }
+    .explore-btn:hover .toolTip{
+        visibility: visible;
+        text-align: center;
+        display: inline-flex
+    }
+    #passing-yards{
+        color: white;position: absolute;
+        font-size: 85px;
+        margin-top: -195px;
+        margin-left: 100px;
+    }
+    #second-passing-yards{
+        color: white;position: absolute;
+        font-size: 80px;
+        margin-top: -132px;
+        margin-left: 100px;
+    }
+    .explore-btn{float:right;
+        margin-right:-140px;
+        margin-top: 350px;
+        font-size: 40px;
+        display: block;
+        background: gold;
+        width: 160px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        height: 60px;
+    }
+    #arrowContainer{
+        float: right;
+        position: relative;
+        margin-top: 220px;
+        margin-right: 30px;
+    
+    }
+    .explore-btn .toolTip{
+        z-index: 1px;
+        visibility: hidden;
+        font-size: 15px;
+        background:black ;
+        width: 120px;
+        border-radius: 6px;
+        bottom: 100%;
+        padding: 0px 5;
+            text-align: center;
+        }
+        .explore-btn:hover .toolTip{
+            visibility: visible;
+            text-align: center;
+            display: inline-flex
+        }
+        .social-sharing{
+            position: absolute;
+            margin-top:370px;
+            padding: 15px;
+            }
+            .centre-menu a{
+                color: white;text-decoration: none;
+                list-style-type: none;
+            }.centre-menu{
+                line-height: -10px;
+                width: 200px;
+               margin-top: 240px;
+               margin-left: 160px;
+            }.centre-menu a:hover{
+                color: blue;
+            }
+}
+
+@media only screen and (max-width: 980px){
+    body{
+        height: 600px;
+    }
+    .right-nav{
+        position: relative;
+        float: right;
+        display:block;
+        margin-right: 30px;
+        margin-top: -30px;
+    }.right-nav a{
+        padding-top: 10px;
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    #arrowContainer{
+        float: right;
+        position: relative;
+        margin-top: 220px;
+        margin-right: 30px;
+    
+    }
+    #firstArrow{
+        background: gray;
+       border:1px solid white;
+       margin-right: 20px;
+       padding: 15px;
+       border-radius: 100%;
+       font-size: 25px;
+       width: 20px;
+       font-weight: bolder;
+       
+       cursor: pointer;
+    }
+    #secondArrow{
+        background: gray;
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 100%;
+        font-size: 25px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    #firstArrow:hover,#secondArrow:hover{
+        background: yellowgreen;
+    }
+    .explore-btn{
+        float: right;
+        margin-right:-140px;
+        margin-top: 370px;
+        font-size: 40px;
+        display: inline-block;
+        background: gold;
+        width: 160px;
+        text-align: center;
+        /* color: white; */
+        cursor: pointer;
+        text-align: center;
+        height: 60px;
+    }
+    .social-sharing{
+    position: absolute;
+    margin-top:370px;
+    padding: 15px;
+    }
+    .social-sharing a{
+        text-decoration: none;
+        color: white;
+    }#social-img{
+        border-radius: 100%;
+        block-size: 18px;
+    }
+    .dropdown-nav{
+        color: gold;
+        cursor: pointer;
+        font-size: 40px;
+     }.dropdown-nav:hover #drpt{
+         display: block;
+     }
+     .logo{ 
+         font-size: 40px;
+     }
+     
+     #drpt{direction: rtl;
+         min-width: 10px;
+         position: absolute;
+         font-size: 17px;
+         margin-top: -22px;
+         display: none;
+         
+     
+     }#drpt ul li{
+         padding: 5px;
+         font-size: 15px;
+         display: inline;
+         text-decoration: none;
+         border: 1px solid white;
+         border-bottom-style: dashed;
+         border-radius:12px 45px 45px 15px;
+         list-style-type: none;
+     }#drpt ul li:hover{
+         background: rgb(11, 150, 185);
+         color: white;
+     }
+     .twelve{
+        font-size: 250px;
+        box-shadow: 10px 10px white;
+        color: yellowgreen
+        transform() translate(260px,-50px);
+        margin-left: -180px;
+    }
+    #passing-yards{
+        color: white;
+        position: absolute;
+        font-size: 80px;
+        margin-top: -190px;
+        margin-left: 105px;
+    }
+    #second-passing-yards{
+        color: white;
+        position: absolute;
+        font-size: 80px;
+        margin-top: -133px;
+        margin-left:105px;
+    }
+   
+    .explore-btn .toolTip{
+    z-index: 1px;
+    visibility: hidden;
+    font-size: 15px;
+    background:black ;
+    width: 120px;
+    border-radius: 6px;
+    bottom: 100%;
+    padding: 0px 5;
+        text-align: center;
+    }
+    .explore-btn:hover .toolTip{
+        visibility: visible;
+        text-align: center;
+        display: inline-flex
+    }
+    .centre-menu a{
+        color: white;text-decoration: none;
+        list-style-type: none;
+    }.centre-menu{
+        width: 200px;
+        line-height: -10px;
+       margin-top: 230px;
+       margin-left: 50px;
+    }.centre-menu a:hover{
+        color: blue;
+    }
+}

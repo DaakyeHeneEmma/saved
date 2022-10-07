@@ -1,7 +1,7 @@
 // responsiveness of the page was intentionally ommitted
 // it is only set to desktop type
 
-
+//refreshed btn
 const exploreBtn = document.querySelector('.explore-btn')
 exploreBtn.addEventListener('click', function(evt){
     const rest = evt.target.remove()
